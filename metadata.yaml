@@ -1,0 +1,8 @@
+name: hardening-ssh-tests
+summary: hardening-ssh-tests is a charm for testing a charm
+maintainers:
+  - Chris MacNaughton <chris.macnaughton@canonical.com>
+description: |
+  hardening-ssh-tests is a charm for testing a charm against Hardening.io standards
+tags:
+  - testing

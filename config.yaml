@@ -1,0 +1,5 @@
+options:
+  app-path:
+    type: string
+    default: /srv/hardening/ssh
+    description: Path on the filesystem to run the app within
