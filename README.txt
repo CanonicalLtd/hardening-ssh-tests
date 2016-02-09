@@ -11,3 +11,11 @@ juju run --unit $UNIT_TO_TEST "\
 # Running a test
 
 juju action do hardening-ssh-tests/0 run-test test-name=default/inspec/ target-ip=10.5.0.9
+
+# Generating charm
+
+git clone https://github.com/CanonicalLtd/hardening-ssh-tests.git
+mkdir /tmp/juju_repo
+charm generate -o /tmp/juju_repo hardening-ssh-tests
+cd /tmp/juju_repo
+juju deploy local:trusty/hardening-ssh-tests
