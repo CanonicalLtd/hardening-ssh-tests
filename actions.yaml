@@ -1,0 +1,11 @@
+run-test:
+  description: Run test
+  params:
+    test-name:
+      type: string
+      description: Name of test
+    target-ip:
+      type: string
+      descripion: Target IP to be tested
+  required: [test-name, target-ip]
+  additionalProperties: false
